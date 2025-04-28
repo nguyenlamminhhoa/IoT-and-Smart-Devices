@@ -1,0 +1,2 @@
+g++ water_relay.cpp -o water_relay -lpaho-mqttpp3 -lpaho-mqtt3c -pthread -lssl -lcrypto
+LD_LIBRARY_PATH=/usr/local/lib ./water_relay
