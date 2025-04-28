@@ -1,0 +1,2 @@
+g++ mqtt_subscriber.cpp -o mqtt_subscriber -lpaho-mqttpp3 -lpaho-mqtt3c -pthread -lssl -lcrypto
+LD_LIBRARY_PATH=/usr/local/lib ./mqtt_subscriber
