@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Netlify App</title>
+</head>
+<body>
+  <h1>Netlify Web App</h1>
+  <button onclick="callAPI()">Call API</button>
+  <pre id="result"></pre>
+
+  <script>
+    async function callAPI() {
+      const res = await fetch('/.netlify/functions/callapi');
+      const text = await res.text();
+      document.getElementById('result').innerText = text;
+    }
+  </script>
+</body>
+</html>
